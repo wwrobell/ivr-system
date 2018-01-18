@@ -1,4 +1,5 @@
 from util.capture_audio import record_to_file
+from util.ivr_tree import classify
 from run_pathfinder import find_keywords
     
 if __name__ == '__main__':
@@ -11,5 +12,6 @@ if __name__ == '__main__':
     #record_to_file(wave_filename)
     
     # Define phrases you want to spot
-    phrases = ['historię', 'transakcji', 'transakcje', 'odblokować', 'zastrzec', 'zablokować', 'kartę']
+    phrases = ['historię', 'transakcji', 'transakcje', 'odblokować', 'zastrzec', 'zablokować', 'kartę', 'hasło']
     spotted = find_keywords(phrases, "waves/example_answer.wav")
+    classify(spotted)
