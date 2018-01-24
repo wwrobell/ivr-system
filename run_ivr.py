@@ -1,6 +1,5 @@
 from util.capture_audio import record_to_file
 from util.ivr_tree import classify
-from util.pin_check import check_pin
 from run_pathfinder import find_keywords
 from run_sarmata import recognize_numbers
 import winsound
