@@ -19,7 +19,7 @@ def normalize(snd_data):
     "Average the volume out"
     MAXIMUM = 16384
     times = float(MAXIMUM)/max(abs(i) for i in snd_data)
-    print(max(abs(i) for i in snd_data))
+    print('recorded.\n')
 
     r = array('h')
     for i in snd_data:
@@ -95,7 +95,7 @@ def record():
         elif not silent and not snd_started:
             snd_started = True
 
-        if snd_started and num_silent > 30:
+        if snd_started and num_silent > 40:
             break
 
     sample_width = p.get_sample_size(FORMAT)
