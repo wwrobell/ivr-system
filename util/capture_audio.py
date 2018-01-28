@@ -110,6 +110,7 @@ def record():
 
 def record_to_file(path):
     "Records from the microphone and outputs the resulting data to 'path'"
+    print("answer recording...\n")
     sample_width, data = record()
     data = pack('<' + ('h'*len(data)), *data)
 
