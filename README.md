@@ -1,6 +1,6 @@
 # ivr-system
 
-This is the simple IVR (Interactive Voice Response) project based on ASR technology (using Sarmata and Pathfinder)
+Simple IVR (Interactive Voice Response) project based on ASR technology (using Sarmata and Pathfinder)
 
 ## Requirements:
  - VPN connection with AGH network (http://panel.agh.edu.pl/docs/openvpn/) when using outside the network.
